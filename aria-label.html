@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>aria-label - belongs to the workshop: Who's afraid of ARIA</title>
+	<meta name="author" content="Rian Rietveld">
+	<link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+<body>
+
+<header role="banner">
+	<h1>aria-label</h1>
+</header>
+
+<main>
+
+	<p>With an aria label you can add additional information about an element.</p>
+
+	<div class="highlight">
+	<p>1: Without aria-label:</p>
+	<pre>
+    &lt;a href="your-url"&gt;
+        edit
+    &lt;/a&gt;
+	</pre>
+
+	<a href="#">edit</a>
+	</div>
+
+	<div class="highlight">
+	<p>2: With aria-label "edit my awesome post":</p>
+
+	<pre>
+	&lt;a href="your-url"
+		aria-label="edit my awesome post"&gt;
+		edit
+	&lt;/a&gt;
+	</pre>
+
+	<a href="#" aria-label="edit: my awesome post">edit</a>
+	</div>
+
+	<div class="highlight">
+	<p>3. But beware: an aria-label overrides the link text:</p>
+
+	<pre>
+    &lt;a href="your-url"
+        aria-label="edit my awesome post"&gt;
+		delete
+	&lt;/a&gt;
+	</pre>
+
+	<a href="#" aria-label="edit: my awesome post">delete</a>
+	</div>
+
+	<div class="highlight">
+	<p>4. Or don't use ARIA but the .screen-reader-text class</p>
+	<pre>
+    &lt;a href="your-url"&gt;
+         edit&lt;span class="screen-reader-text"> my awesome post&lt;/span>
+    &lt;/a&gt;
+	</pre>
+
+	<a href="#">edit<span class="screen-reader-text">: my awesome post</span></a>
+	</div>
+
+	<div class="highlight">
+		Pro tip : <a href="https://tink.uk/accessible-emoji/">Accessible emoijs</a>
+	<pre>
+		&lt;span role="img" aria-label="Snowman"&gt;&#9731;&lt;/span&gt;
+	</pre>
+
+		<span role="img" aria-label="Snowman">&#9731;</span>
+
+	<p><a href="index.html">Back to start page</a></p>
+	</div>
+
+</main>
+
+
+<footer role="contentinfo">
+	<p>This pages are written by <a href="https://rianrietveld.com">Rian Rietveld</a> for the workshop Who's afraid of ARIA, first given at WordCamp Nijmegen 2018. You are free to use/fork/modify this pages for your own use: the code is on GitHub at <a href="https://github.com/rianrietveld/workshop-aria">github.com/rianrietveld/workshop-aria</a>.</p>
+</footer>
+
+</body>
