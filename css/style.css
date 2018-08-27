@@ -65,7 +65,7 @@ button[aria-expanded]:hover {
 	color: #555;
 }
 
-button.fabexpandable + [aria-hidden] {
+button.expandable + [aria-hidden] {
 	display: none;
 }
 
@@ -75,11 +75,6 @@ button.expandable + [aria-hidden="false"] {
 
 .expanded-content {
 	padding: 1em 0;
-}
-
-.expanded-content img {
-	width: 80%;
-	height:auto;
 }
 
 blockquote {
