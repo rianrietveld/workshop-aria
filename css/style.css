@@ -16,6 +16,10 @@ footer {
 
 }
 
+.big {
+	font-size: 3em;
+}
+
 pre {
 	font-size: 1.5em;
 	padding: 1em;
