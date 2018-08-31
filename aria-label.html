@@ -69,23 +69,78 @@
 
 
 	<div class="highlight">
-		<p>aria-label versus .screen-reader-text class</p>
+		<p>no link text versus aria-label versus .screen-reader-text class</p>
+
+		<p>No aria</p>
+	<ul class="social-share">
+		<li><a href="#link-to-twitter"><i class="fab fa-twitter"></i></a></li>
+		<li><a href="#link-to-instagram"><i class="fab fa-instagram"></i></a></li>
+	</ul>
+
+	<p>aria-hidden and acreen-reader-text class</p>
 	<ul class="social-share">
 		<li><a href="#link-to-twitter"><i class="fab fa-twitter" aria-hidden="true"></i><span class="screen-reader-text">Follow us on Twitter</span></a></li>
 		<li><a href="#link-to-instagram"><i class="fab fa-instagram" aria-hidden="true"></i><span class="screen-reader-text">Follow us on Instagram</span></a></li>
+	</ul>
+
+	<p>aria-hidden and aria-label</p>
+	<ul class="social-share">
 		<li><a href="#link-to-twitter" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a></li>
-		<li><a href="#link-to-instagram" aria-label="Follow us on Twitter"><i class="fab fa-instagram" ></i></a></li>
+		<li><a href="#link-to-instagram" aria-label="Follow us on Instagram"><i class="fab fa-instagram" ></i></a></li>
 	</ul>
 
 
+	<p>No aria</p>
+	<pre>
+		&lt;ul class="social-share"&gt;
+		&lt;li>
+			&lt;a href="#link-to-twitter">
+				&lt;i class="fab fa-twitter">&lt;/i>
+			&lt;/a>
+		&lt;/li>
+
+		&lt;li>
+			&lt;a href="#link-to-instagram">
+				&lt;i class="fab fa-instagram">&lt;/i>
+			&lt;/a>
+		&lt;/li>
+		&lt;/ul>
+	</pre>
+		<p>aria-hidden and acreen-reader-text class</p>
 	<pre>
 	&lt;ul class="social-share"&gt;
-		&lt;li>&lt;a href="#link-to-twitter">&lt;i class="fab fa-twitter" aria-hidden="true">&lt;/i>&lt;span class="screen-reader-text">Follow us on Twitter</span>&lt;/a>&lt;/li>
-		&lt;li>&lt;a href="#link-to-instagram">&lt;i class="fab fa-instagram" aria-hidden="true">&lt;/i>&lt;span class="screen-reader-text">Follow us on Instagram</span>&lt;/a>&lt;/li>
-		&lt;li>&lt;a href="#link-to-twitter" aria-label="Follow us on Twitter">&lt;i class="fab fa-twitter">&lt;/i>&lt;/a>&lt;/li>
-		&lt;li>&lt;a href="#link-to-instagram" aria-label="Follow us on Twitter">&lt;i class="fab fa-instagram" >&lt;/i>&lt;/a>&lt;/li>
+		&lt;li>
+			&lt;a href="#link-to-twitter">
+				&lt;i class="fab fa-twitter" aria-hidden="true">&lt;/i>
+				&lt;span class="screen-reader-text">Follow us on Twitter</span>
+			&lt;/a>
+		&lt;/li>
+
+		&lt;li>
+			&lt;a href="#link-to-instagram">
+				&lt;i class="fab fa-instagram" aria-hidden="true">&lt;/i>
+				&lt;span class="screen-reader-text">Follow us on Instagram</span>
+			&lt;/a>
+		&lt;/li>
 	&lt;/ul>
 	</pre>
+		<p>aria-hidden and aria-label</p>
+	<pre>
+	&lt;ul class="social-share"&gt;
+		&lt;li>
+			&lt;a href="#link-to-twitter" aria-label="Follow us on Twitter">
+			&lt;i class="fab fa-twitter">&lt;/i>
+			&lt;/a>
+		&lt;/li>
+		&ltli>
+			&lt;a href="#link-to-instagram" aria-label="Follow us on Twitter">
+				&lt;i class="fab fa-instagram" >&lt;/i>
+			&lt;/a>
+		&lt;/li>
+
+	&lt;/ul>
+	</pre>
+
 	</div>
 
 	<div class="highlight">

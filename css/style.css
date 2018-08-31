@@ -1,6 +1,6 @@
 body {
 	font-family: sans-serif;
-	width: 50em;
+	width: 70em;
 	margin: 2em auto;
 	color: #333;
 	background-color: #fefefe;
@@ -13,14 +13,15 @@ footer {
 }
 
 .highlight {
+
+}
+
+pre {
+	font-size: 1.5em;
 	padding: 1em;
 	margin:1em;
 	background-color: #eeeeee;
 	overflow: hidden;
-}
-
-code {
-	font-size: 1.5em;
 }
 
 /* Text meant only for screen readers. */
